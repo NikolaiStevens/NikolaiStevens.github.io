@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <style>
+        a{
+            position:absolute;
+            top:1px;
+            right:1px;
+            text-decoration: none;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.808);
+            margin-top: 5px;
+            padding:5px;
+            outline: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #searchBar{  
+            border-inline-start-color: gainsboro; 
+            border-width: 1px; 
+            width: 300px;
+            height: 22px;  
+            font-size: 15px;
+            outline: none;
+        }
+        #searchBar:hover{
+            box-shadow: 0 0 5px #D3D3D3;
+        }
+        #foo{
+            width: 150px;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+        }
+        .container{
+            margin-top: 160px;
+            margin-left: 50px;
+            text-align: left;
+        }
+        .row {
+            padding: 4px;
+        }
+        #button1{
+            margin-left: 360px;
+            background-color: rgb(40, 112, 245);
+            color: white;
+            font-size: 10px;
+            height: 20px;
+            border-radius: 2px 2px 2px 2px; 
+        }
+        #button1:hover{
+            background-color: rgb(28, 103, 243);
+        }
+    </style>
+    <body>
+        <a href="https://www.google.com/">Google Search</a>
+        <form action="https://google.com/search" name="search">
+            <div class="container">
+                <div class="row">
+                    <p id="foo">Find pages with...</p> 
+                </div>
+                <div class="row">
+                    <label id="foo" for="field1">all these words:</label>
+                    <input type="text" class="textinput" id="searchBar" value=""  name="as_q">
+                </div>
+                <div class="row">
+                    <label id="foo" for="field2">this exact word or phrase: </label>
+                    <input type="text" class="textinput" id="searchBar" value=""  name="as_epq">
+                </div>
+                <div class="row">
+                    <label id="foo" for="field3">any of this words: </label>
+                    <input type="text" class="textinput" id="searchBar" value=""  name="as_oq">
+                </div>
+                <div class="row">
+                    <label id="foo" for="field4">none of these words: </label>
+                    <input type="text" class="textinput" id="searchBar" value=""  name="as_eq">
+                </div>
+                <div class="row">
+                    <input id="button1" type="submit" value="advanced search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
