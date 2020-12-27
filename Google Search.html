@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <style>
+        .linksRight{
+            position:absolute;
+            top:1px;
+            right:1px;
+        }
+        a{ 
+            text-decoration: none;
+            font-size: 8px;
+            color: rgba(0, 0, 0, 0.808);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #searchBar{
+            border-radius: 30px 30px 30px 30px; 
+            border-inline-start-color: gainsboro; 
+            border-width: 1px; 
+            width: 300px;
+            height: 22px;
+            margin-top: 130px;
+            margin-left: 200px;    
+            font-size: 8px;
+            outline: none;
+            
+        }
+        #searchBar:hover{
+            box-shadow: 0 0 5px #D3D3D3;
+        }
+        #button1{
+            text-align: center; 
+            border-radius: 2px 2px 2px 2px; 
+            background-color:rgba(247, 241, 241, 0.678);
+            border-width: 0px; 
+            margin-left: 275px; 
+            height: 15px; 
+            font-size: 8px;
+            color: rgba(0, 0, 0, 0.808);
+            outline: none;
+        }
+        #button2{
+            text-align: center; 
+            border-radius: 2px 2px 2px 2px; 
+            background-color:rgba(247, 241, 241, 0.678);
+            border-width: 0px; 
+            margin-left: 285px; 
+            margin-top: 160px;
+            height: 15px; 
+            font-size: 8px;
+            color: rgba(0, 0, 0, 0.808);
+            outline: none;
+        }
+        #button1:hover{
+            box-shadow: 0 0 1px grey;
+        }
+        #button2:hover{
+            box-shadow: 0 0 1px grey;
+        }
+        .row > div {
+            padding: 6px;
+        }
+    </style>
+    <body>
+        <div class="linksRight"
+            <ul>
+                </li><a href="https://www.google.com/imghp?hl=en">Image Search</a></li>
+                </li><a href="https://www.google.com/advanced_search">Advanced Search</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <form method="GET" action="https://www.google.com/search?q=text">
+                        <input id="searchBar" type="text" name="q">
+                        <input id="button1"  type="submit" value="Google Search" >
+                    </form>
+                </div>
+                <div class="col-1">
+                    <form action="https://www.google.com/doodles/">
+                        <input id="button2" type="submit" value="I'm Feeling Lucky">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
